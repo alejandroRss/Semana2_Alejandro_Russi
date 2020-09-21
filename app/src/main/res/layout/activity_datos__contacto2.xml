@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_ConfirmarD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="@string/text_confirmar"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_ConfirmarD">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/tv_Nombre_Completo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+
+
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="678dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginTop="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:text="Fecha de nacimiento:" />
+
+            <TextView
+                android:id="@+id/tv_Fecha_Nacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginTop="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginTop="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:text="Tel:" />
+
+            <TextView
+                android:id="@+id/tv_Telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginTop="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginTop="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:text="Mail:" />
+
+            <TextView
+                android:id="@+id/tv_Mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginTop="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right"
+
+                android:layout_marginTop="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:text="Descripción:" />
+
+            <TextView
+                android:id="@+id/tv_Descrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginTop="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bt_Sig2"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/bt_edit_datos"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

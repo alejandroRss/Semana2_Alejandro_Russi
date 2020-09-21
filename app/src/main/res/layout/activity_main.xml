@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:isScrollContainer="true"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalScrollbarPosition="right">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:layout_gravity="top">
+
+        <EditText
+            android:id="@+id/et_Nombre_Completo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:hint="@string/edit_nombre"
+            android:importantForAutofill="no"
+
+
+            android:inputType="textAutoCorrect"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="678dp" />
+
+        <EditText
+            android:id="@+id/et_Fecha_Nacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginTop="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:editable="false"
+            android:hint="@string/fecha_nacimiento"
+
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/et_Telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginTop="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:hint="@string/edit_telefono"
+            android:importantForAutofill="no"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/et_Mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginTop="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:hint="@string/edit_email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+
+            />
+
+        <EditText
+            android:id="@+id/et_Descrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginTop="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:hint="@string/edit_descripc"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine" />
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_Sig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_siguiente"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:onClick="onClick"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>
